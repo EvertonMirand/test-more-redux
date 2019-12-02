@@ -1,4 +1,4 @@
-import { SAVE_LIST } from './types';
+import { SAVE_LIST, REMOVE_LIST } from './types';
 
 export function saveList(name, algo, telefone) {
   return {
@@ -7,6 +7,15 @@ export function saveList(name, algo, telefone) {
       name,
       algo,
       telefone,
+    },
+  };
+}
+
+export function removeList(index) {
+  return {
+    type: REMOVE_LIST,
+    payload: {
+      index,
     },
   };
 }

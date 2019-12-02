@@ -17,9 +17,9 @@ export default function Home() {
   function onSubmit(e) {
     e.preventDefault();
     dispatch(saveList(nome, algo, telefone));
-    // setNome('');
-    // setAlgo('');
-    // setTelefone('');
+    setNome('');
+    setAlgo('');
+    setTelefone('');
   }
 
   const onChangeText = (event, setValue) => setValue(event.target.value);
